@@ -1,0 +1,37 @@
+{
+  "name": "tracker-express-ejs-tailwind",
+  "version": "1.0.0",
+  "description": "Sample Express MVC project w/ TailwindCSS and EJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.mjs",
+    "build:css": "postcss ./src/public/styles/styles.css -o ./src/public/styles/build.css --watch",
+    "dev": "concurrently \"npm:build:css\" \"npm:start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannnirin/tracker-express-ejs-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannnirin/tracker-express-ejs-tailwind/issues"
+  },
+  "homepage": "https://github.com/hannnirin/tracker-express-ejs-tailwind#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.4",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.8"
+  }
+}
